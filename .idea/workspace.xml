@@ -3,8 +3,31 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5aebe254-4c7c-4e77-8965-59c8d80ab06f" name="Default Changelist" comment="" />
+    <list default="true" id="5aebe254-4c7c-4e77-8965-59c8d80ab06f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/footer.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Post.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/User.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/db/db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_posts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.db.config.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/db/template.db.config.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +36,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1hY22NQh5hov6Y2GYV7NVkftDDm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,6 +56,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\coren\Documents\Developpement\PHP\S3\Sprint1\model\db" />
+      <recent name="C:\Users\coren\Documents\Developpement\PHP\S3\Sprint1\model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\coren\Documents\Developpement\PHP\S3\Sprint1" />
     </key>
@@ -41,24 +74,63 @@
       <updated>1600173496966</updated>
       <workItem from="1600173498133" duration="1934000" />
       <workItem from="1600349674008" duration="1046000" />
+      <workItem from="1600350733035" duration="2782000" />
     </task>
+    <task id="LOCAL-00001" summary="Freeze">
+      <created>1600350757826</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600350757826</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Freeze">
+      <created>1600350899630</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600350899630</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Freeze" />
+    <option name="LAST_COMMIT_MESSAGE" value="Freeze" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1600349729403">
+    <state x="694" y="248" key="NewPhpClassDialog" timestamp="1600352692703">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600349729403" />
+    <state x="694" y="248" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600352692703" />
+    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1600352778610">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600352778610" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1600173564038">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1600173564038" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600349846673">
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1600350930337">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600349846673" />
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600350930337" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600350879116">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600350879116" />
   </component>
 </project>
