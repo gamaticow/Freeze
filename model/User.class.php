@@ -8,19 +8,26 @@ class User{
 
 
     function __construct(){
+        $args = func_get_args();
+        $id = $args[0];
+        $name = $args[1];
+        $posts = $args[2];
 
+        $this->id = $id;
+        $this->name = $name;
+        $this->posts = $posts;
     }
 
-    function getPosts(){
-
+    public function getPosts(){
+        return $this->posts;
     }
 
     function createPost($title, $resume ,$content, $mot_cle, $theme){
-
+        $post = new Post($title,$resume,$content,$this->name,$mot_cle,$theme);
     }
 
     function getWriteAccessPosts(){
-
+        $sql = "SELECT article FROM DROIT WHERE";
     }
 
     static function connect($name, $passwd){
@@ -28,6 +35,6 @@ class User{
     }
 
     static function register($name, $passwd){
-
+        $sql = "INSERT INTO CLIENT VALUES  ('','".$name."','".$passwd."')";
     }
 }
