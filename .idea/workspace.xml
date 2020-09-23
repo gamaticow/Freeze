@@ -14,15 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5aebe254-4c7c-4e77-8965-59c8d80ab06f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Post.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Post.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/User.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/User.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/new_post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +69,7 @@
       <workItem from="1600771933897" duration="45000" />
       <workItem from="1600851681971" duration="2982000" />
       <workItem from="1600856292093" duration="312000" />
+      <workItem from="1600869018691" duration="726000" />
     </task>
     <task id="LOCAL-00001" summary="Freeze">
       <created>1600350757826</created>
@@ -120,6 +115,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Freeze" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="753" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1600869494144">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="753" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1600869494144" />
     <state x="694" y="248" key="NewPhpClassDialog" timestamp="1600352692703">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
