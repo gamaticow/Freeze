@@ -2,6 +2,10 @@
 session_start();
 $isAuth = isset($_SESSION['id']);
 
+include_once "model/db/db.php";
+include_once "model/User.class.php";
+include_once "model/Post.class.php";
+
 ?>
 <html lang="fr">
 <head>
