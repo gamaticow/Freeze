@@ -8,6 +8,8 @@ class User{
 
 
     function __construct(){
+        include 'Post.class.php';
+        include 'db/db.php';
         $args = func_get_args();
         $id = $args[0];
         $name = $args[1];
@@ -16,6 +18,10 @@ class User{
         $this->name = $name;
         $this->posts = array();
 
+        $sql = "SELECT Id_Art FROM ARTICLE WHERE Auteur_Art=$this->id";
+        foreach ($db->query($sql) as $row){
+            array_push($this->posts, new Post($row["Id_Art"]));
+        }
     }
 
     public function getPosts(){
@@ -23,11 +29,20 @@ class User{
     }
 
     function createPost($title, $resume ,$content, $mot_cle, $theme){
-        $post = new Post($title,$resume,$content,$this->name,$mot_cle,$theme);
+        include 'Post.class.php';
+        $post = new Post($title,$resume,$content,$this->id,$mot_cle,$theme);
+        array_push($this->posts, $post);
+        return $post;
     }
 
     function getWriteAccessPosts(){
-        $sql = "SELECT article FROM DROIT WHERE";
+        include 'db/db.php';
+        include 'Post.class.php';
+        $tb = array();
+        $sql = "SELECT Id_Art FROM DROIT WHERE Id_Cli=$this->id";
+        foreach ($db->query($sql) as $row) {
+            array_push($tb, new Post($row["Id_Art"]));
+        }
     }
 
     static function connect($name, $passwd){

@@ -14,10 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5aebe254-4c7c-4e77-8965-59c8d80ab06f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/model/test_post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Post.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Post.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/User.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/User.class.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600869947608</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Connexion et inscription">
+      <created>1605108495215</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605108495215</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +135,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Freeze" />
     <MESSAGE value="Separation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Separation" />
+    <MESSAGE value="Connexion et inscription" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connexion et inscription" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1600869494144">
@@ -139,13 +147,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="184" y="87" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600870222031" />
+    <state x="598" y="286" key="MultipleFileMergeDialog" timestamp="1605108516467">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="598" y="286" key="MultipleFileMergeDialog/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1605108516467" />
     <state x="694" y="248" key="NewPhpClassDialog" timestamp="1600352692703">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="694" y="248" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600352692703" />
-    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1600852435899">
+    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1605109360484">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="794" y="448" key="NewPhpFileDialog/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1605109360484" />
     <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600852435899" />
     <state x="695" y="227" key="RollbackChangesDialog" timestamp="1600870224024">
       <screen x="0" y="0" width="1920" height="1050" />
