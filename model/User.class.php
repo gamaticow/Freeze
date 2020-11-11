@@ -11,11 +11,11 @@ class User{
         $args = func_get_args();
         $id = $args[0];
         $name = $args[1];
-        $posts = $args[2];
 
         $this->id = $id;
         $this->name = $name;
-        $this->posts = $posts;
+        $this->posts = array();
+
     }
 
     public function getPosts(){
@@ -31,10 +31,32 @@ class User{
     }
 
     static function connect($name, $passwd){
-        $sql = "SELECT id FROM CLIENT WHERE Pseudo_Cli='".$name."' AND Mdp_Cli='".$passwd."'";
+        include 'db/db.php';
+
+        $sql = "SELECT Id_Cli FROM CLIENT WHERE Pseudo_Cli='".$name."' AND Mdp_Cli='".$passwd."'";
+        $id = null;
+        foreach ($db->query($sql) as $row){
+            $id = $row["Id_Cli"];
+        }
+        if($id != null){
+            return new User($id, $name);
+        }else{
+            return null;
+        }
     }
 
     static function register($name, $passwd){
-        $sql = "INSERT INTO CLIENT VALUES  ('','".$name."','".$passwd."')";
+        include 'db/db.php';
+        $sql = "SELECT Pseudo_Cli FROM CLIENT WHERE Pseudo_Cli='" . $name . "'";
+        $pseudo = null;
+        foreach ($db->query($sql) as $row) {
+            $pseudo = $row["Pseudo_Cli"];
+        }
+        if ($pseudo == null) {
+            $sql = "INSERT INTO CLIENT(Pseudo_Cli, Mdp_Cli) VALUES('" . $name . "','" . $passwd . "')";
+            $db->exec($sql);
+            return new User($name, $passwd);
+        }
+        return null;
     }
 }
