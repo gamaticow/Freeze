@@ -35,12 +35,12 @@ include_once "model/Post.class.php";
         <?php
         if(!$isAuth){
         ?>
-            <button class="btn btn-outline-success" style="margin-right: 10px;">Se connecter</button>
+            <button class="btn btn-outline-success" style="margin-right: 10px;" onclick="window.location.href = 'login.php'">Se connecter</button>
             <button class="btn btn-primary">S'inscrire</button>
         <?php
         }else{
         ?>
-            <button class="btn btn-danger">Se déconnecter</button>
+            <button class="btn btn-danger" onclick="window.location.href = 'logout.php'">Se déconnecter</button>
         <?php
         }
         ?>
