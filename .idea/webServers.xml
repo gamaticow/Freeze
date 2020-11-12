@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bb20f255-e444-4e21-8fd2-bcca71df9148" name="Freezeweb" url="https://la-projets.univ-lemans.fr/~i193041">
+        <fileTransfer rootFolder="/home/www" accessType="SFTP" host="la-projets.univ-lemans.fr" port="2221" sshConfigId="25ceac28-9b67-4380-ba7a-4c0037ebde47" sshConfig="i193041@la-projets.univ-lemans.fr:2221 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
