@@ -36,7 +36,7 @@ include_once "model/Post.class.php";
         if(!$isAuth){
         ?>
             <button class="btn btn-outline-success" style="margin-right: 10px;" onclick="window.location.href = 'login.php'">Se connecter</button>
-            <button class="btn btn-primary">S'inscrire</button>
+            <button class="btn btn-primary" onclick="window.location.href = 'register.php'">S'inscrire</button>
         <?php
         }else{
         ?>

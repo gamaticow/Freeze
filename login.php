@@ -3,22 +3,21 @@
 include_once "header.inc.php";
 
 if($isAuth){
-    header("location: /index.php");
+    header("location: index.php");
     exit();
 }
+
 $error = "";
 if(isset($_POST["name"]) && isset($_POST["passwd"])){
     $user = User::connect($_POST["name"], $_POST["passwd"]);
 
     if($user != null) {
         $_SESSION["user"] = $user;
-        header("location: test.php");
+        header("location: index.php");
         exit();
     }else{
         $error = "<p style='color:red;'>Pseudo ou mot de passe incorrect</p>";
     }
-}else if((empty($_POST["name"]) && isset($_POST["passwd"])) || (empty($_POST["passwd"]) && isset($_POST["name"]))){
-    $error = "<p style='color:red;'>Veuillez remplir tous les champs</p>";
 }
 ?>
 
