@@ -1,6 +1,6 @@
 <?php
 session_start();
-$isAuth = isset($_SESSION['id']);
+$isAuth = isset($_SESSION['user']);
 
 include_once "model/db/db.php";
 include_once "model/User.class.php";

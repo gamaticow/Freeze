@@ -14,9 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5aebe254-4c7c-4e77-8965-59c8d80ab06f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/model/test_post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Post.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Post.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/User.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/User.class.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +78,7 @@
       <workItem from="1600869018691" duration="4126000" />
       <workItem from="1601900055457" duration="1812000" />
       <workItem from="1603438042878" duration="18000" />
+      <workItem from="1605196837603" duration="1506000" />
     </task>
     <task id="LOCAL-00001" summary="Freeze">
       <created>1600350757826</created>
@@ -114,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605108495215</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Modeles User et Post terminé">
+      <created>1605115271098</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605115271098</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +144,8 @@
     <MESSAGE value="Freeze" />
     <MESSAGE value="Separation" />
     <MESSAGE value="Connexion et inscription" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connexion et inscription" />
+    <MESSAGE value="Modeles User et Post terminé" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modeles User et Post terminé" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1600869494144">
@@ -168,13 +177,15 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1600173564038" />
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1600869952113">
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1605115272744">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1605115272744" />
     <state x="552" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600869952113" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600852761598">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605115237094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1605115237094" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600852761598" />
   </component>
 </project>

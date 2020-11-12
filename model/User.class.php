@@ -8,7 +8,6 @@ class User{
 
 
     function __construct(){
-        include 'Post.class.php';
         include 'db/db.php';
         $args = func_get_args();
         $id = $args[0];
@@ -29,7 +28,6 @@ class User{
     }
 
     function createPost($title, $resume ,$content, $mot_cle, $theme){
-        include 'Post.class.php';
         $post = new Post($title,$resume,$content,$this->id,$mot_cle,$theme);
         array_push($this->posts, $post);
         return $post;
@@ -37,7 +35,6 @@ class User{
 
     function getWriteAccessPosts(){
         include 'db/db.php';
-        include 'Post.class.php';
         $tb = array();
         $sql = "SELECT Id_Art FROM DROIT WHERE Id_Cli=$this->id";
         foreach ($db->query($sql) as $row) {
