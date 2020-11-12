@@ -14,10 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5aebe254-4c7c-4e77-8965-59c8d80ab06f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_15_54__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_15_54__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Post.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Post.class.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,7 @@
       <workItem from="1600869018691" duration="4126000" />
       <workItem from="1601900055457" duration="1812000" />
       <workItem from="1603438042878" duration="18000" />
-      <workItem from="1605196837603" duration="3998000" />
+      <workItem from="1605196837603" duration="4358000" />
     </task>
     <task id="LOCAL-00001" summary="Freeze">
       <created>1600350757826</created>
@@ -129,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605198512362</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Register page">
+      <created>1605201046946</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605201046946</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +160,8 @@
     <MESSAGE value="Connexion et inscription" />
     <MESSAGE value="Modeles User et Post terminé" />
     <MESSAGE value="Login page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login page" />
+    <MESSAGE value="Register page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Register page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1600869494144">
@@ -185,10 +193,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1600173564038" />
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1605198522333">
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1605201197826">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1605198522333" />
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1605201197826" />
     <state x="552" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600869952113" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605199067474">
       <screen x="0" y="0" width="1920" height="1050" />

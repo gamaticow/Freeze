@@ -5,7 +5,7 @@
       <paths name="Freezeweb">
         <serverdata>
           <mappings>
-            <mapping deploy="/Projet_php" local="$PROJECT_DIR$" web="/Projet_php" />
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

@@ -9,6 +9,7 @@ class Post {
     private $mot_cle; //Tableau de mots clé
     private $auteur; //ID de l'auteur
     private $theme;
+    private $date;
 
     function __construct(){
         $ctp = func_num_args();
@@ -33,7 +34,8 @@ class Post {
         $this->auteur=$auteur;
         $this->mot_cle=$mot_cle;
         $this->theme=$theme;
-        $sql= "INSERT INTO ARTICLE(Nom_Article, Cont_Art, Auteur_Art, Date_Art, Theme_Art, Resume_Art) VALUES ('$title','$content',$auteur,'".date("Y-m-d H:i:s")."','$theme','$resume')";
+        $this->date = date("Y-m-d H:i:s");
+        $sql= "INSERT INTO ARTICLE(Nom_Article, Cont_Art, Auteur_Art, Date_Art, Theme_Art, Resume_Art) VALUES ('$title','$content',$auteur,'".$this->date."','$theme','$resume')";
         $db->exec($sql);
         $this->id=$db->lastInsertId();
 
@@ -54,6 +56,7 @@ class Post {
             $this->content=$row['Cont_Art'];
             $this->auteur=$row['Auteur_Art'];
             $this->theme=$row['Theme_Art'];
+            $this->date=$row['Date_Art'];
         }
 
         $this->mot_cle = array();
@@ -146,6 +149,10 @@ class Post {
 
     public function getAuteur(){
         return $this->auteur;
+    }
+
+    public function getDate(){
+        return $this->date;
     }
 
     function getWriteAccessUser(){
