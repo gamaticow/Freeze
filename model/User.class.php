@@ -23,6 +23,10 @@ class User{
         }
     }
 
+    public function getName(){
+        return $this->name;
+    }
+
     public function getPosts(){
         return $this->posts;
     }
