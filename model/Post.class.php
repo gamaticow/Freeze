@@ -187,6 +187,17 @@ class Post {
     function removeWriteAccessUser($id){
         include 'db/db.php';
         $sql = "DELETE FROM DROIT WHERE Id_Art=$this->id AND Id_Cli=$id";
+        $db->exec($sql);
+    }
+
+    static function getPosts(){
+        include 'db/db.php';
+        $sql = "SELECT Id_Art FROM `ARTICLE` ORDER BY `ARTICLE`.`Date_Art` ASC";
+        $posts = array();
+        foreach ($db->query($sql) as $row){
+            array_push($posts, new Post($row["Id_Art"]));
+        }
+        return $posts;
     }
 
 }
