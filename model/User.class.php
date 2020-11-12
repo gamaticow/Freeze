@@ -75,4 +75,15 @@ class User{
         }
         return null;
     }
+
+    static function getNameById($id){
+        include 'db/db.php';
+        $name = "";
+        $sql = "SELECT Pseudo_Cli FROM CLIENT WHERE Id_Cli=$id";
+        foreach ($db->query($sql) as $row){
+            $name = $row["Pseudo_Cli"];
+        }
+
+        return $name;
+    }
 }
