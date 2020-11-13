@@ -1,0 +1,59 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5aebe254-4c7c-4e77-8965-59c8d80ab06f\" name=\"Default Changelist\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/footer.inc.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/header.inc.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/index.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/model/Post.class.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/model/User.class.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/model/db/db.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/my_posts.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/new_post.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gitignore\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/encodings.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/index.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/template.db.config.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/model/db/template.db.config.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1hY22NQh5hov6Y2GYV7NVkftDDm\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.pluginManager\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\coren\\Documents\\Developpement\\PHP\\S3\\Sprint1\\model\\db\" />\r\n      <recent name=\"C:\\Users\\coren\\Documents\\Developpement\\PHP\\S3\\Sprint1\\model\" />\r\n    </key>\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\coren\\Documents\\Developpement\\PHP\\S3\\Sprint1\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5aebe254-4c7c-4e77-8965-59c8d80ab06f\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1600173496966</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1600173496966</updated>\r\n      <workItem from=\"1600173498133\" duration=\"1934000\" />\r\n      <workItem from=\"1600349674008\" duration=\"1046000\" />\r\n      <workItem from=\"1600350733035\" duration=\"2782000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Freeze\">\r\n      <created>1600350757826</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600350757826</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Freeze\">\r\n      <created>1600350899630</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600350899630</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Freeze\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Freeze\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"694\" y=\"248\" key=\"NewPhpClassDialog\" timestamp=\"1600352692703\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state x=\"694\" y=\"248\" key=\"NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1600352692703\" />\r\n    <state x=\"794\" y=\"448\" key=\"NewPhpFileDialog\" timestamp=\"1600352778610\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state x=\"794\" y=\"448\" key=\"NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1600352778610\" />\r\n    <state x=\"461\" y=\"170\" key=\"SettingsEditor\" timestamp=\"1600173564038\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state x=\"461\" y=\"170\" key=\"SettingsEditor/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1600173564038\" />\r\n    <state x=\"552\" y=\"245\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1600350930337\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state x=\"552\" y=\"245\" key=\"Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1600350930337\" />\r\n    <state x=\"623\" y=\"227\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1600350879116\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state x=\"623\" y=\"227\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1600350879116\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision d0f49f4c76e6d77878c605d403f2fdd9481d6051)
++++ .idea/workspace.xml	(date 1600856985827)
+@@ -14,19 +14,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="5aebe254-4c7c-4e77-8965-59c8d80ab06f" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/footer.inc.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/header.inc.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/model/Post.class.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/model/User.class.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/model/db/db.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/my_posts.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/new_post.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/template.db.config.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/db/template.db.config.php" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -75,6 +63,7 @@
+       <workItem from="1600173498133" duration="1934000" />
+       <workItem from="1600349674008" duration="1046000" />
+       <workItem from="1600350733035" duration="2782000" />
++      <workItem from="1600856199392" duration="782000" />
+     </task>
+     <task id="LOCAL-00001" summary="Freeze">
+       <created>1600350757826</created>
+@@ -106,6 +95,7 @@
+         </entry>
+       </map>
+     </option>
++    <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Freeze" />
+@@ -128,9 +118,10 @@
+       <screen x="0" y="0" width="1920" height="1050" />
+     </state>
+     <state x="552" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600350930337" />
+-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600350879116">
+-      <screen x="0" y="0" width="1920" height="1050" />
++    <state x="623" y="225" width="672" height="672" key="search.everywhere.popup" timestamp="1600856962482">
++      <screen x="0" y="0" width="1920" height="1040" />
+     </state>
++    <state x="623" y="225" width="672" height="672" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600856962482" />
+     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600350879116" />
+   </component>
+ </project>
+\ No newline at end of file

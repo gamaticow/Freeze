@@ -1,6 +1,6 @@
 <?php
 session_start();
-$isAuth = isset($_SESSION['id']);
+$isAuth = isset($_SESSION['user']);
 
 include_once "model/db/db.php";
 include_once "model/User.class.php";
@@ -9,7 +9,7 @@ include_once "model/Post.class.php";
 ?>
 <html lang="fr">
 <head>
-    <title>🧊 Freeze</title>
+    <title>Freeze</title>
     <meta charset="UTF-8" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@ include_once "model/Post.class.php";
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">🧊 Freeze</a>
+    <a class="navbar-brand" href="index.php">🧊 Freeze</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,23 +26,28 @@ include_once "model/Post.class.php";
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Mes articles</a>
+                <a class="nav-link" href="my_posts.php">Mes articles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Créer un article</a>
+                <a class="nav-link" href="new_post.php">Créer un article</a>
             </li>
         </ul>
         <?php
         if(!$isAuth){
         ?>
-            <button class="btn btn-outline-success" style="margin-right: 10px;">Se connecter</button>
-            <button class="btn btn-primary">S'inscrire</button>
+            <button class="btn btn-outline-success" style="margin-right: 10px;" onclick="window.location.href = 'login.php'">Se connecter</button>
+            <button class="btn btn-primary" onclick="window.location.href = 'register.php'">S'inscrire</button>
         <?php
         }else{
         ?>
-            <button class="btn btn-danger">Se déconnecter</button>
+                <span style="margin-right: 10px;"><?php echo unserialize($_SESSION["user"])->getName(); ?></span>
+            <button class="btn btn-danger" onclick="window.location.href = 'logout.php'">Se déconnecter</button>
         <?php
         }
         ?>
     </div>
 </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <br>
