@@ -35,12 +35,12 @@ class Post {
         $this->mot_cle=$mot_cle;
         $this->theme=$theme;
         $this->date = date("Y-m-d H:i:s");
-        $sql= "INSERT INTO ARTICLE(Nom_Article, Cont_Art, Auteur_Art, Date_Art, Theme_Art, Resume_Art) VALUES ('$title','$content',$auteur,'".$this->date."','$theme','$resume')";
+        $sql= "INSERT INTO ARTICLE(Nom_Article, Cont_Art, Auteur_Art, Date_Art, Theme_Art, Resume_Art) VALUES ('".str_replace('\'', '\'\'', $title)."','".str_replace('\'', '\'\'', $content)."',$auteur,'".$this->date."','".str_replace('\'', '\'\'', $theme)."','".str_replace('\'', '\'\'', $resume)."')";
         $db->exec($sql);
         $this->id=$db->lastInsertId();
 
         foreach ($mot_cle as $mc){
-            $sql = "INSERT INTO MOTCLE VALUES ($this->id,'$mc')";
+            $sql = "INSERT INTO MOTCLE VALUES ($this->id,'".str_replace('\'', '\'\'', $mc)."')";
             $db->exec($sql);
         }
     }
@@ -78,7 +78,7 @@ class Post {
         include 'db/db.php';
         $this->title = $title;
         //TODO Insertion dans la BDD
-        $sql= "UPDATE ARTICLE SET Nom_Article=$title WHERE Id_Art=$this->id";
+        $sql= "UPDATE ARTICLE SET Nom_Article='".str_replace('\'', '\'\'', $title)."' WHERE Id_Art=$this->id";
         $db->exec($sql);
     }
 
@@ -90,7 +90,7 @@ class Post {
         include 'db/db.php';
         $this->resume = $resume;
         //TODO Insertion dans la BDD
-        $sql= "UPDATE ARTICLE SET Resume_Art=$resume WHERE Id_Art=$this->id";
+        $sql= "UPDATE ARTICLE SET Resume_Art='".str_replace('\'', '\'\'', $resume)."' WHERE Id_Art=$this->id";
         $db->exec($sql);
     }
 
@@ -102,7 +102,7 @@ class Post {
         include 'db/db.php';
         $this->content = $content;
         //TODO Insertion dans la BDD
-        $sql= "UPDATE ARTICLE SET Cont_Art=$content WHERE Id_Art=$this->id";
+        $sql= "UPDATE ARTICLE SET Cont_Art='".str_replace('\'', '\'\'', $content)."' WHERE Id_Art=$this->id";
         $db->exec($sql);
     }
 
@@ -112,7 +112,7 @@ class Post {
 
     public function addMotCle($mot_cle){
         include 'db/db.php';
-        $sql = "SELECT Mot_Cle_Art FROM MOTCLE WHERE Id_Art=$this->id AND Mot_Cle_Art='$mot_cle'";
+        $sql = "SELECT Mot_Cle_Art FROM MOTCLE WHERE Id_Art=$this->id AND Mot_Cle_Art='".str_replace('\'', '\'\'', $mot_cle)."'";
         $mc = null;
         foreach ($db->query($sql) as $row){
             $mc = $row["Mot_Cle_Art"];
@@ -122,7 +122,7 @@ class Post {
             return;
 
         array_push($this->mot_cle, $mot_cle);
-        $sql = "INSERT INTO MOTCLE VALUES ($this->id,'$mot_cle')";
+        $sql = "INSERT INTO MOTCLE VALUES ($this->id,'".str_replace('\'', '\'\'', $mot_cle)."')";
         $db->exec($sql);
     }
 
@@ -135,7 +135,7 @@ class Post {
             }
         }
         $this->mot_cle = $newMotCle;
-        $sql = "DELETE FROM MOTCLE WHERE Id_Art=$this->id AND Mot_Cle_Art='$mot_cle'";
+        $sql = "DELETE FROM MOTCLE WHERE Id_Art=$this->id AND Mot_Cle_Art='".str_replace('\'', '\'\'', $mot_cle)."'";
         $db->exec($sql);
     }
 
@@ -147,7 +147,7 @@ class Post {
         include 'db/db.php';
         $this->theme = $theme;
         //TODO Insertion dans la BDD
-        $sql= "UPDATE MOTCLE SET Theme_Art = $theme WHERE Id_Art=$this->id";
+        $sql= "UPDATE MOTCLE SET Theme_Art='".str_replace('\'', '\'\'', $theme)."' WHERE Id_Art=$this->id";
         $db->exec($sql);
     }
 
@@ -192,7 +192,7 @@ class Post {
 
     static function getPosts(){
         include 'db/db.php';
-        $sql = "SELECT Id_Art FROM `ARTICLE` ORDER BY `ARTICLE`.`Date_Art` ASC";
+        $sql = "SELECT Id_Art FROM `ARTICLE` ORDER BY `ARTICLE`.`Date_Art` DESC";
         $posts = array();
         foreach ($db->query($sql) as $row){
             array_push($posts, new Post($row["Id_Art"]));

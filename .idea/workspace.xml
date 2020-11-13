@@ -14,10 +14,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5aebe254-4c7c-4e77-8965-59c8d80ab06f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_15_54__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_15_54__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/droit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Post.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Post.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/User.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/User.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/test_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/test_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/my_posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/new_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +62,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\coren\Documents\Developpement\PHP\S3\Sprint1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\coren\Documents\Developpement\PHP\S3\Sprint1\model\db" />
       <recent name="C:\Users\coren\Documents\Developpement\PHP\S3\Sprint1\model" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\coren\Documents\Developpement\PHP\S3\Sprint1" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -79,6 +89,8 @@
       <workItem from="1601900055457" duration="1812000" />
       <workItem from="1603438042878" duration="18000" />
       <workItem from="1605196837603" duration="4358000" />
+      <workItem from="1605216331439" duration="9360000" />
+      <workItem from="1605261746403" duration="12498000" />
     </task>
     <task id="LOCAL-00001" summary="Freeze">
       <created>1600350757826</created>
@@ -136,7 +148,42 @@
       <option name="project" value="LOCAL" />
       <updated>1605201046946</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add Date getter in Post class">
+      <created>1605201533681</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605201533681</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add Id getter in Post class">
+      <created>1605208226641</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605208226641</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add name getter in User class">
+      <created>1605217069437</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605217069437</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add getNameById in User class">
+      <created>1605219518744</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605219518744</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add getPosts in Post class">
+      <created>1605223115947</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605223115947</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +208,12 @@
     <MESSAGE value="Modeles User et Post terminé" />
     <MESSAGE value="Login page" />
     <MESSAGE value="Register page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Register page" />
+    <MESSAGE value="Add Date getter in Post class" />
+    <MESSAGE value="Add Id getter in Post class" />
+    <MESSAGE value="Add name getter in User class" />
+    <MESSAGE value="Add getNameById in User class" />
+    <MESSAGE value="Add getPosts in Post class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add getPosts in Post class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1600869494144">
@@ -172,6 +224,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="184" y="87" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600870222031" />
+    <state x="784" y="427" key="Github.CreateGistDialog" timestamp="1605223127002">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="784" y="427" key="Github.CreateGistDialog/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1605223127002" />
     <state x="598" y="286" key="MultipleFileMergeDialog" timestamp="1605108516467">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -180,10 +236,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="694" y="248" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600352692703" />
-    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1605109360484">
+    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1605264236908">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="448" key="NewPhpFileDialog/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1605109360484" />
+    <state x="794" y="448" key="NewPhpFileDialog/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1605264236908" />
     <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600852435899" />
     <state x="695" y="227" key="RollbackChangesDialog" timestamp="1600870224024">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -193,10 +249,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1600173564038" />
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1605201197826">
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1605223117099">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1605201197826" />
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1605223117099" />
     <state x="552" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600869952113" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605199067474">
       <screen x="0" y="0" width="1920" height="1050" />

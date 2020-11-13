@@ -4,23 +4,19 @@ class User{
 
     private $id;
     private $name;
-    private $posts;
 
 
     function __construct(){
-        include 'db/db.php';
         $args = func_get_args();
         $id = $args[0];
         $name = $args[1];
 
         $this->id = $id;
         $this->name = $name;
-        $this->posts = array();
+    }
 
-        $sql = "SELECT Id_Art FROM ARTICLE WHERE Auteur_Art=$this->id";
-        foreach ($db->query($sql) as $row){
-            array_push($this->posts, new Post($row["Id_Art"]));
-        }
+    public function getId(){
+        return $this->id;
     }
 
     public function getName(){
@@ -28,12 +24,18 @@ class User{
     }
 
     public function getPosts(){
-        return $this->posts;
+        include 'db/db.php';
+        $posts = array();
+
+        $sql = "SELECT Id_Art FROM ARTICLE WHERE Auteur_Art=$this->id";
+        foreach ($db->query($sql) as $row){
+            array_push($posts, new Post($row["Id_Art"]));
+        }
+        return $posts;
     }
 
     function createPost($title, $resume ,$content, $mot_cle, $theme){
         $post = new Post($title,$resume,$content,$this->id,$mot_cle,$theme);
-        array_push($this->posts, $post);
         return $post;
     }
 
@@ -48,8 +50,8 @@ class User{
 
     static function connect($name, $passwd){
         include 'db/db.php';
-
-        $sql = "SELECT Id_Cli FROM CLIENT WHERE Pseudo_Cli='".$name."' AND Mdp_Cli='".$passwd."'";
+        $passwd = md5($passwd);
+        $sql = "SELECT Id_Cli FROM CLIENT WHERE Pseudo_Cli='".str_replace('\'', '\'\'', $name)."' AND Mdp_Cli='".$passwd."'";
         $id = null;
         foreach ($db->query($sql) as $row){
             $id = $row["Id_Cli"];
@@ -63,15 +65,16 @@ class User{
 
     static function register($name, $passwd){
         include 'db/db.php';
-        $sql = "SELECT Pseudo_Cli FROM CLIENT WHERE Pseudo_Cli='" . $name . "'";
+        $passwd = md5($passwd);
+        $sql = "SELECT Pseudo_Cli FROM CLIENT WHERE Pseudo_Cli='".str_replace('\'', '\'\'', $name)."'";
         $pseudo = null;
         foreach ($db->query($sql) as $row) {
             $pseudo = $row["Pseudo_Cli"];
         }
         if ($pseudo == null) {
-            $sql = "INSERT INTO CLIENT(Pseudo_Cli, Mdp_Cli) VALUES('" . $name . "','" . $passwd . "')";
+            $sql = "INSERT INTO CLIENT(Pseudo_Cli, Mdp_Cli) VALUES('".str_replace('\'', '\'\'', $name)."','" . $passwd . "')";
             $db->exec($sql);
-            return new User($name, $passwd);
+            return new User($db->lastInsertId(), $name);
         }
         return null;
     }
@@ -85,5 +88,15 @@ class User{
         }
 
         return $name;
+    }
+
+    static function getIdByName($name){
+        include 'db/db.php';
+        $id = 0;
+        $sql = "SELECT Id_Cli FROM CLIENT WHERE Pseudo_Cli='$name'";
+        foreach ($db->query($sql) as $row){
+            $id = $row["Id_Cli"];
+        }
+        return $id;
     }
 }
